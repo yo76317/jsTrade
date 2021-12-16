@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="">
     <style>
-
+body{margin:60px auto;}
     </style>
 </head>
 
@@ -27,8 +27,8 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="mandarin">國:</label>
-                        <input type="text" class="form-control" id="mandarin" placeholder="輸入國語分數" name="mandarin"
-                            min="0" max="100">
+                        <!-- type記得要用number，不然min,max吃不到 -->
+                        <input type="number" class="form-control" id="mandarin" placeholder="輸入國語分數" name="mandarin" min="0" max="100">
                     </div>
                 </div>
                 <p class="text-danger" id="mandarinErr"></p>
@@ -38,8 +38,7 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="english">英:</label>
-                        <input type="text" class="form-control" id="english" placeholder="輸入英語分數" name="english" min="0"
-                            max="100">
+                        <input type="number" class="form-control" id="english" placeholder="輸入英語分數" name="english" min="0" max="100">
                     </div>
                 </div>
                 <p class="text-danger" id="englishErr"></p>
@@ -50,11 +49,11 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="math">數:</label>
-                        <input type="text" class="form-control" id="math" placeholder="輸入數學分數" name="math" min="0"
-                            max="100">
+                        <!-- type用text，才能輸入數字以外，這防呆才有意義 -->
+                        <input type="text" class="form-control" id="math" placeholder="輸入數學分數" name="math">
+                        <p class="text-danger" id="mathErr"></p>
                     </div>
                 </div>
-                <p class="text-danger" id="mathErr"></p>
             </div>
 
             <hr>
@@ -62,10 +61,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="text-black" id="resulta1">成績: </h3>
+                        <button type="submit1" class="btn btn-primary col-12">分數統計1</button>
                     </div>
-                    <div class="col">
-                        <button type="submit1" class="btn btn-primary">分數統計1</button>
+                    <div class="col-6">
+                        <h3 class="text-black" id="resulta1">成績: </h3>
                     </div>
                 </div>
             </div>
@@ -79,8 +78,8 @@
                     </div>
                     <div class="col">
                         <!-- 這層div 可拔掉一層 -->
-                        <div class="alert alert-dark" role="alert" id="result2">
-                        <div id="result3">成績顯示區</div>
+                        <div class="alert alert-light" role="alert" id="result2">
+                        <div class="text-center" id="result3">成績顯示區</div>
                         </div>
                     </div>
                 </div>

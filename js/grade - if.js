@@ -41,6 +41,10 @@ form.addEventListener("submit",function(e){
     // 數
     const parseIntmath = parseInt(math.value);
     console.log(parseIntmath);
+    // 幫數學欄位加上防呆，判斷第一個值是否為數字
+    if (isNaN(parseIntmath)) {
+        mathErr.innerText = "請輸入數字";
+    }
 
     // 1.國英數三欄輸入分數,分類ABCDE
     let all3 = parseIntmandarin + parseIntenglish + parseIntmath;
