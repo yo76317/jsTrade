@@ -35,8 +35,18 @@ form.addEventListener("submit",function(e){
     // 1.國英數三欄輸入分數,輸出ABCDE
     let all3 = parseIntmandarin + parseIntenglish + parseIntmath;
 
-    console.log(typeof(all3));
+    let ac = parseInt(all3 / 3 /10);
+    alert (ac);
 
+    switch (a){
+        case 9:
+            console.log(`成績為 ${all3},成績為A`);
+        break;
+
+
+
+
+    }
 
 
     //2.A90↑ B80↑ C70↑ D60↑ E59↓

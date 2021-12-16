@@ -27,7 +27,8 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="mandarin">國:</label>
-                        <input type="text" class="form-control" id="mandarin" placeholder="輸入國語分數" name="mandarin" min="0" max="100">
+                        <input type="text" class="form-control" id="mandarin" placeholder="輸入國語分數" name="mandarin"
+                            min="0" max="100">
                     </div>
                 </div>
                 <p class="text-danger" id="mandarinErr"></p>
@@ -37,7 +38,8 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="english">英:</label>
-                        <input type="text" class="form-control" id="english" placeholder="輸入英語分數" name="english" min="0" max="100">
+                        <input type="text" class="form-control" id="english" placeholder="輸入英語分數" name="english" min="0"
+                            max="100">
                     </div>
                 </div>
                 <p class="text-danger" id="englishErr"></p>
@@ -48,24 +50,51 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="math">數:</label>
-                        <input type="text" class="form-control" id="math" placeholder="輸入數學分數" name="math" min="0" max="100">
+                        <input type="text" class="form-control" id="math" placeholder="輸入數學分數" name="math" min="0"
+                            max="100">
                     </div>
                 </div>
                 <p class="text-danger" id="mathErr"></p>
             </div>
 
-<hr>
+            <hr>
 
-            <div class="row">
-                <div class="col-6 text-right">
-                    <button type="submit" class="btn btn-primary">分數統計</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="text-black" id="resulta1">成績: </h3>
+                    </div>
+                    <div class="col">
+                        <button type="submit1" class="btn btn-primary">分數統計1</button>
+                    </div>
                 </div>
             </div>
+
+            <hr>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit2" class="btn btn-primary col">分數統計2</button>
+                    </div>
+                    <div class="col">
+                        <!-- 這層div 可拔掉一層 -->
+                        <div class="alert alert-dark" role="alert" id="result2">
+                        <div id="result3">成績顯示區</div>
+                        </div>
+                    </div>
+                </div>
+
         </form>
+
+        <hr>
+
+
+
     </div>
 
 
-    <script src="./grade.js"></script>
+    <script src="./grade - if.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
