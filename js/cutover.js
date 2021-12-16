@@ -12,11 +12,16 @@
 // option /
 //switch
 
+// 宣告
+
 // 先寫宣告
 // 再去試看看抓不抓的到console.log
 // 可以再接著寫
 
-//宣告
+// 宣告
+// get form
+
+// form = id是(myForm)的值
 const form = document.getElementById('myForm');
 const cmInput = document.getElementById("centimeter");
 const inchInput = document.getElementById("inch");
@@ -30,6 +35,8 @@ const m2Err = document.getElementById("m2Err");
 const pingErr = document.getElementById("pingErr");
 
 // get form change
+// form = id(myForm)的值再用,返回指定的值
+// addeventlistener 添加事件 (事件自己查再輸入)
 form.addEventListener("change", function (e) {
     console.log("centimeter is changes")
     // 公分換算英吋
@@ -41,6 +48,7 @@ form.addEventListener("change", function (e) {
     console.log(inch);
     inchInput.value = inch;
 });
+
 // 英吋換算公分
 inchInput.addEventListener("change", function (e) {
     console.log("inch is changes")
@@ -50,7 +58,6 @@ inchInput.addEventListener("change", function (e) {
     console.log(cm);
     cmInput.value = cm;
 });
-
 
 // 平方公尺換算坪
 m2Input.addEventListener("change", function (e) {
