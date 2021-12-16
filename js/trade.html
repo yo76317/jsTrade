@@ -1,0 +1,61 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>折扣計算</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>折扣計算</h2>
+        <p>條件:<br>
+        1.原價*折扣-現金折扣<br>
+        2.>500才折扣<br>
+        3.現金折扣上限200<br>
+        </p>
+        <form action="./trade.js" id="myForm">
+
+          <div class="form-group">
+            <label for="originPrice">原價 :</label>
+            <input type="text" class="form-control" id="originPrice" placeholder="輸入金額" name="originPrice">
+          </div>
+
+          <div class="form-group">
+            <label for="discount">折扣 : </label>
+            <input type="text" class="form-control" id="discount" placeholder="輸入0-100" name="discount">
+          </div>
+
+          <div class="form-group">
+            <label for="cashDiscount">現金折扣 </label>
+            <input type="text" class="form-control" id="cashDiscount" placeholder="上限200" name="cashDiscount">
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    
+    <hr>
+    <div class="container">
+      <div class="rol">
+        <div class="col-12">
+          <h3 class="text-black" id="resultOutput">原價: </h3>
+          <h3 class="text-black" id="discount">折扣: </h3>
+          <h3 class="text-black" id="cashDiscount">現金折扣: </h3>
+          <h3 class="text-danger" id="">省下: </h3>
+          <h3 class="text-danger" id="">付款: </h3>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./trade.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>單位換算1</h2>
+        <form action="" id="myForm">
+            <div class="form-group">
+                <label for="centimeter">公分 :</label>
+                <input type="text" class="form-control" id="centimeter" placeholder="輸入公分" name="centimeter">
+            </div>
+            <div class="form-group">
+                <label for="inch">英寸 :</label>
+                <input type="text" class="form-control" id="inch" placeholder="輸入英寸" name="inch">
+            </div>
+
+            <h2>單位換算2</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="m2">平方公尺:</label>
+                        <input type="text" class="form-control" id="m2" placeholder="Enter m2" name="m2">
+                    </div>
+                    <p class="text-danger" id="m2Err"></p>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="ping">坪:</label>
+                        <input type="text" class="form-control" id="ping" placeholder="Enter ping" name="ping">
+                    </div>
+                    <p class="text-danger" id="pingErr"></p>
+                </div>
+
+            </div>
+
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+    <script src="./cutover.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
